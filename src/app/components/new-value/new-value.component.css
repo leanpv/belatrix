@@ -1,0 +1,15 @@
+.scroll {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+.dropdown-item {
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    button {
+        width: 100%;
+    }
+}

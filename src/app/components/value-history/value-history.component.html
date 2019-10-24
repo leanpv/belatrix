@@ -1,0 +1,25 @@
+<div class="container-fluid col-12 col-md-8 pt-5 bg-dark">
+    <span class="text-center text-white"><h3>HISTORIC PRICE - Last 3 days</h3></span>
+    <div class="row justify-content-between pt-3">
+
+        <div class="text-white col-1">
+            <div class="col-12">Arg</div>
+            <div class="col-12">Brasil</div>
+            <div class="col-12">Peru</div>
+        </div>
+
+        <div class="text-white col-3" *ngFor="let item of arr">
+
+            <div class="col">
+                {{ item.rates.ARS | currency : 'USD' : 'symbol' : '1.4-4' }}
+            </div>
+            <div class="col">
+                {{ item.rates.BRL | currency : 'USD' : 'symbol' : '1.4-4' }}
+            </div>
+            <div class="col">
+                {{ item.rates.PEN | currency : 'USD' : 'symbol' : '1.4-4' }}
+            </div>
+
+        </div>
+    </div>
+</div>
